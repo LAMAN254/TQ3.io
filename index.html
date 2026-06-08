@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unidos en Cada Paso — Technology in Lloa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== READING PROGRESS BAR ========== -->
+  <div id="readingProgress"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-dot"></span>
+        <span>Lloa<strong>Tech</strong></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#transportation">Transport</a></li>
+        <li><a href="#tourism">Tourism</a></li>
+        <li><a href="#environment">Environment</a></li>
+        <li><a href="#agriculture">Agriculture</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#science">Science</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="darkModeToggle" aria-label="Toggle dark mode">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
+        </button>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero" class="hero">
+    <div class="hero-parallax" id="heroParallax"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-fade">🌿 Interdisciplinary Project 2024</div>
+      <h1 class="hero-title">
+        <span class="typing-text" id="typingTitle"></span>
+      </h1>
+      <p class="hero-subtitle reveal-up">
+        The Application of Technology in Daily Activities Developed in Lloa
+      </p>
+      <div class="hero-divider reveal-up"></div>
+      <p class="hero-tagline reveal-up">
+        Exploring how GPS, smart agriculture, environmental sensors, and digital education<br/>
+        transform life in one of Ecuador's most remarkable communities.
+      </p>
+      <div class="hero-cta reveal-up">
+        <a href="#introduction" class="btn-primary">
+          <span>Explore Lloa</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <a href="#quiz" class="btn-outline">Take the Quiz</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>Scroll to discover</span>
+    </div>
+    <!-- Floating particles -->
+    <div class="particles" id="particles"></div>
+  </section>
+
+  <!-- ========== INTRODUCTION ========== -->
+  <section id="introduction" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">01 — Introduction</span>
+        <h2>What is <span class="highlight">Lloa</span>?</h2>
+        <p>A hidden gem in the Pichincha province, where tradition meets innovation</p>
+      </div>
+
+      <div class="intro-grid">
+        <div class="intro-card reveal-left" data-delay="0">
+          <div class="intro-card-icon">🗺️</div>
+          <h3>Location</h3>
+          <p>Located southwest of Quito at <strong>2,700–4,787 m</strong> altitude in the Western Andes of Ecuador. Part of the Pichincha Volcano metropolitan buffer zone.</p>
+        </div>
+        <div class="intro-card reveal-left" data-delay="100">
+          <div class="intro-card-icon">🏔️</div>
+          <h3>Geography</h3>
+          <p>Flanked by the <strong>Pichincha Volcano</strong> to the north and lush cloud forests to the south. The parish covers over <strong>539 km²</strong> of dramatic terrain.</p>
+        </div>
+        <div class="intro-card reveal-left" data-delay="200">
+          <div class="intro-card-icon">🌱</div>
+          <h3>Culture</h3>
+          <p>Home to roughly <strong>1,400 inhabitants</strong> preserving ancestral farming, artisan crafts, and Kichwa traditions alongside modern connectivity.</p>
+        </div>
+        <div class="intro-card reveal-left" data-delay="300">
+          <div class="intro-card-icon">💡</div>
+          <h3>Technology Today</h3>
+          <p>Mobile networks, GPS navigation, drone agriculture, and volcanic monitoring satellites now integrate seamlessly with Lloa's daily rural life.</p>
+        </div>
+      </div>
+
+      <!-- Dynamic counters -->
+      <div class="counters-row reveal-up">
+        <div class="counter-item">
+          <span class="counter-num" data-target="539">0</span>
+          <span class="counter-unit">km²</span>
+          <p>Total area</p>
+        </div>
+        <div class="counter-item">
+          <span class="counter-num" data-target="4787">0</span>
+          <span class="counter-unit">m</span>
+          <p>Max. altitude</p>
+        </div>
+        <div class="counter-item">
+          <span class="counter-num" data-target="1400">0</span>
+          <span class="counter-unit">+</span>
+          <p>Inhabitants</p>
+        </div>
+        <div class="counter-item">
+          <span class="counter-num" data-target="12">0</span>
+          <span class="counter-unit">×</span>
+          <p>Tech growth (last decade)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRANSPORTATION ========== -->
+  <section id="transportation" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">02 — Transport & Connectivity</span>
+        <h2>Technology <span class="highlight">on the Road</span></h2>
+        <p>How GPS, modern vehicles and digital maps transformed mobility in Lloa</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2005</span>
+            <h4>📡 First Cell Tower</h4>
+            <p>Mobile signal reaches Lloa for the first time, enabling basic digital communication and early GPS use for farmers navigating steep terrain.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right" data-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2012</span>
+            <h4>🛣️ Road Modernization</h4>
+            <p>The main Quito–Lloa highway is paved and GPS-mapped. Emergency vehicles now use real-time routing, cutting response times by 60%.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right" data-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2018</span>
+            <h4>🚐 Smart Buses</h4>
+            <p>Public transport integrates digital schedules and GPS tracking. Residents can check bus location via smartphone apps in real time.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right" data-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2024</span>
+            <h4>🛸 Drone Delivery Pilot</h4>
+            <p>Medical supplies and urgent packages are trialled via autonomous drones, overcoming road blockages during landslides triggered by volcanic activity.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-icons-row reveal-up">
+        <div class="tech-icon-card">
+          <div class="tech-icon">📡</div>
+          <p>GPS Navigation</p>
+        </div>
+        <div class="tech-icon-card">
+          <div class="tech-icon">🛰️</div>
+          <p>Satellite Maps</p>
+        </div>
+        <div class="tech-icon-card">
+          <div class="tech-icon">🚗</div>
+          <p>Smart Vehicles</p>
+        </div>
+        <div class="tech-icon-card">
+          <div class="tech-icon">📱</div>
+          <p>Mobile Apps</p>
+        </div>
+        <div class="tech-icon-card">
+          <div class="tech-icon">🚁</div>
+          <p>Aerial Drones</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TOURISM ========== -->
+  <section id="tourism" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">03 — Smart Tourism</span>
+        <h2>Discover <span class="highlight">Lloa's Wonders</span></h2>
+        <p>Digital platforms and virtual guides make ecotourism accessible worldwide</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card reveal-fade" data-delay="0">
+          <div class="gallery-img" style="background: linear-gradient(135deg,#1a3a2a,#2E8B57);">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom">🔍</div>
+            </div>
+            <div class="gallery-placeholder">🌋</div>
+          </div>
+          <div class="gallery-info">
+            <h4>Pichincha Volcano</h4>
+            <p>Active stratovolcano monitored 24/7 by IGEPN sensors and satellites</p>
+            <span class="gallery-tag">Volcanic</span>
+          </div>
+        </div>
+        <div class="gallery-card reveal-fade" data-delay="100">
+          <div class="gallery-img" style="background: linear-gradient(135deg,#1a2a3a,#4FC3F7);">
+            <div class="gallery-overlay"><div class="gallery-zoom">🔍</div></div>
+            <div class="gallery-placeholder">🌊</div>
+          </div>
+          <div class="gallery-info">
+            <h4>Cinto Waterfalls</h4>
+            <p>Crystal-clear cascades accessible via GPS-tracked hiking trails</p>
+            <span class="gallery-tag">Nature</span>
+          </div>
+        </div>
+        <div class="gallery-card reveal-fade" data-delay="200">
+          <div class="gallery-img" style="background: linear-gradient(135deg,#2a1a3a,#7B2FBE);">
+            <div class="gallery-overlay"><div class="gallery-zoom">🔍</div></div>
+            <div class="gallery-placeholder">🌿</div>
+          </div>
+          <div class="gallery-info">
+            <h4>Cloud Forest Reserve</h4>
+            <p>Biodiversity hotspot with QR-coded trails for digital self-guided tours</p>
+            <span class="gallery-tag">Ecosystem</span>
+          </div>
+        </div>
+        <div class="gallery-card reveal-fade" data-delay="300">
+          <div class="gallery-img" style="background: linear-gradient(135deg,#3a2a1a,#E8A020);">
+            <div class="gallery-overlay"><div class="gallery-zoom">🔍</div></div>
+            <div class="gallery-placeholder">🏡</div>
+          </div>
+          <div class="gallery-info">
+            <h4>Ancestral Villages</h4>
+            <p>360° virtual tours allow global visitors to explore heritage sites online</p>
+            <span class="gallery-tag">Cultural</span>
+          </div>
+        </div>
+        <div class="gallery-card reveal-fade" data-delay="400">
+          <div class="gallery-img" style="background: linear-gradient(135deg,#1a3a3a,#20B2AA);">
+            <div class="gallery-overlay"><div class="gallery-zoom">🔍</div></div>
+            <div class="gallery-placeholder">🦅</div>
+          </div>
+          <div class="gallery-info">
+            <h4>Bird Watching Zones</h4>
+            <p>AI-powered apps identify over 120 bird species by their calls in real time</p>
+            <span class="gallery-tag">Wildlife</span>
+          </div>
+        </div>
+        <div class="gallery-card reveal-fade" data-delay="500">
+          <div class="gallery-img" style="background: linear-gradient(135deg,#2a3a1a,#6B8E23);">
+            <div class="gallery-overlay"><div class="gallery-zoom">🔍</div></div>
+            <div class="gallery-placeholder">🚵</div>
+          </div>
+          <div class="gallery-info">
+            <h4>Mountain Bike Routes</h4>
+            <p>Strava-tracked downhill trails with real-time elevation and safety alerts</p>
+            <span class="gallery-tag">Adventure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ENVIRONMENTAL MONITORING ========== -->
+  <section id="environment" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">04 — Environmental Monitoring</span>
+        <h2>Watching <span class="highlight">the Volcano</span></h2>
+        <p>Advanced sensor networks keep Lloa's community safe 365 days a year</p>
+      </div>
+
+      <div class="env-grid">
+        <div class="env-info reveal-left">
+          <div class="env-stat-card">
+            <div class="env-icon">🌡️</div>
+            <div>
+              <h4>Thermal Sensors</h4>
+              <p>Over <strong>40 thermal cameras</strong> monitor magma temperature shifts and fumarole activity at Pichincha's crater rim.</p>
+            </div>
+          </div>
+          <div class="env-stat-card">
+            <div class="env-icon">📊</div>
+            <div>
+              <h4>Seismic Network</h4>
+              <p><strong>18 seismographs</strong> across the volcano flanks detect micro-tremors as small as 0.1 on the Richter scale.</p>
+            </div>
+          </div>
+          <div class="env-stat-card">
+            <div class="env-icon">🛰️</div>
+            <div>
+              <h4>Satellite InSAR</h4>
+              <p>ESA Sentinel-1 radar satellites measure ground deformation with <strong>millimeter precision</strong> every 6 days.</p>
+            </div>
+          </div>
+          <div class="env-stat-card">
+            <div class="env-icon">📻</div>
+            <div>
+              <h4>Early Warning System</h4>
+              <p>Automated SMS alerts reach all 1,400 residents in under <strong>30 seconds</strong> when thresholds are exceeded.</p>
+            </div>
+          </div>
+        </div>
+        <div class="env-diagram reveal-right">
+          <div class="volcano-diagram">
+            <div class="volcano-body">
+              <div class="volcano-peak">🌋</div>
+              <div class="sensor-label s1">📡 Seismic</div>
+              <div class="sensor-label s2">🌡️ Thermal</div>
+              <div class="sensor-label s3">💨 Gas</div>
+              <div class="sensor-label s4">🛰️ Satellite</div>
+              <div class="alert-pulse"></div>
+            </div>
+            <div class="volcano-caption">IGEPN Monitoring System — Pichincha Volcano</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alert level display -->
+      <div class="alert-levels reveal-up">
+        <h3>Volcanic Alert Scale</h3>
+        <div class="alert-row">
+          <div class="alert-item green">🟢 Green — Normal</div>
+          <div class="alert-item yellow">🟡 Yellow — Unrest</div>
+          <div class="alert-item orange">🟠 Orange — Elevated</div>
+          <div class="alert-item red">🔴 Red — Eruption</div>
+        </div>
+        <p class="alert-current">Current status: <strong>🟡 Yellow — Minor fumarolic activity</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AGRICULTURE ========== -->
+  <section id="agriculture" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">05 — Agriculture & Innovation</span>
+        <h2>Farming <span class="highlight">Meets Technology</span></h2>
+        <p>Smart irrigation, precision drones, and digital soil analysis revolutionize Lloa's fields</p>
+      </div>
+
+      <div class="flip-cards-grid">
+        <div class="flip-card reveal-fade">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="flip-icon">💧</div>
+              <h4>Smart Irrigation</h4>
+              <p>Tap to learn more</p>
+            </div>
+            <div class="flip-back">
+              <h4>Drip & Sensor Irrigation</h4>
+              <p>IoT soil-moisture sensors automatically control drip lines, reducing water use by <strong>45%</strong> compared to traditional methods. Farmers monitor crop hydration from smartphones.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal-fade" data-delay="100">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="flip-icon">🚁</div>
+              <h4>Drone Spraying</h4>
+              <p>Tap to learn more</p>
+            </div>
+            <div class="flip-back">
+              <h4>Precision Crop Drones</h4>
+              <p>Agricultural drones equipped with multispectral cameras detect nutrient deficiencies and apply fertilizer with <strong>60% less waste</strong> than ground machinery.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal-fade" data-delay="200">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="flip-icon">🌾</div>
+              <h4>Crop Monitoring</h4>
+              <p>Tap to learn more</p>
+            </div>
+            <div class="flip-back">
+              <h4>NDVI Satellite Analysis</h4>
+              <p>Free Sentinel-2 satellite imagery provides weekly NDVI maps showing crop health. Farmers access data via a free QGIS application.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal-fade" data-delay="300">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="flip-icon">🌡️</div>
+              <h4>Weather Stations</h4>
+              <p>Tap to learn more</p>
+            </div>
+            <div class="flip-back">
+              <h4>Micro-Climate Stations</h4>
+              <p>Three automated weather stations across Lloa broadcast temperature, humidity, and UV data every 15 minutes to a local agricultural dashboard.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal-fade" data-delay="400">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="flip-icon">🤖</div>
+              <h4>AI Pest Detection</h4>
+              <p>Tap to learn more</p>
+            </div>
+            <div class="flip-back">
+              <h4>Machine-Learning Scouting</h4>
+              <p>A neural network trained on 50,000 crop images identifies 28 pest species from a single phone photo, enabling early intervention before damage spreads.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal-fade" data-delay="500">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <div class="flip-icon">📲</div>
+              <h4>Digital Markets</h4>
+              <p>Tap to learn more</p>
+            </div>
+            <div class="flip-back">
+              <h4>Online Farm-to-Table</h4>
+              <p>WhatsApp Business groups and a local e-commerce platform let Lloa farmers sell directly to Quito restaurants, eliminating intermediaries and increasing income by <strong>30%</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="agri-stats reveal-up">
+        <div class="agri-stat">
+          <div class="stat-bar-wrap">
+            <span>Water Savings</span><span>45%</span>
+          </div>
+          <div class="stat-bar"><div class="stat-fill" data-pct="45" style="background: var(--accent-blue)"></div></div>
+        </div>
+        <div class="agri-stat">
+          <div class="stat-bar-wrap">
+            <span>Yield Increase</span><span>38%</span>
+          </div>
+          <div class="stat-bar"><div class="stat-fill" data-pct="38" style="background: var(--accent-green)"></div></div>
+        </div>
+        <div class="agri-stat">
+          <div class="stat-bar-wrap">
+            <span>Pesticide Reduction</span><span>60%</span>
+          </div>
+          <div class="stat-bar"><div class="stat-fill" data-pct="60" style="background: #E8A020"></div></div>
+        </div>
+        <div class="agri-stat">
+          <div class="stat-bar-wrap">
+            <span>Income Growth</span><span>30%</span>
+          </div>
+          <div class="stat-bar"><div class="stat-fill" data-pct="30" style="background: #9B59B6"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">06 — Technology in Education</span>
+        <h2>Digital <span class="highlight">Learning Tools</span></h2>
+        <p>How software platforms transform science and mathematics education in Lloa's schools</p>
+      </div>
+
+      <div class="edu-grid">
+        <!-- Code Window -->
+        <div class="code-window reveal-left">
+          <div class="code-window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-title">index.html — Visual Studio Code</span>
+          </div>
+          <pre class="code-block"><code><span class="c-tag">&lt;!DOCTYPE</span> <span class="c-attr">html</span><span class="c-tag">&gt;</span>
+<span class="c-tag">&lt;html</span> <span class="c-attr">lang</span>=<span class="c-str">"en"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;head&gt;</span>
+    <span class="c-tag">&lt;title&gt;</span><span class="c-text">Lloa Tech Project</span><span class="c-tag">&lt;/title&gt;</span>
+  <span class="c-tag">&lt;/head&gt;</span>
+  <span class="c-tag">&lt;body&gt;</span>
+    <span class="c-tag">&lt;h1&gt;</span><span class="c-text">Hello, Lloa! 🌋</span><span class="c-tag">&lt;/h1&gt;</span>
+    <span class="c-tag">&lt;p&gt;</span><span class="c-text">Technology changes lives.</span><span class="c-tag">&lt;/p&gt;</span>
+  <span class="c-tag">&lt;/body&gt;</span>
+<span class="c-tag">&lt;/html&gt;</span></code></pre>
+        </div>
+
+        <!-- Tools grid -->
+        <div class="tools-grid reveal-right">
+          <div class="tool-card">
+            <div class="tool-logo geogebra">GGB</div>
+            <h4>GeoGebra</h4>
+            <p>Interactive graphing for sine waves, cycloidal paths and Newton's law diagrams</p>
+          </div>
+          <div class="tool-card">
+            <div class="tool-logo canva">Cv</div>
+            <h4>Canva</h4>
+            <p>Digital infographics and visual presentations for science communication</p>
+          </div>
+          <div class="tool-card">
+            <div class="tool-logo vscode">VS</div>
+            <h4>VS Code</h4>
+            <p>Students write HTML, CSS & JavaScript to build real websites like this one</p>
+          </div>
+          <div class="tool-card">
+            <div class="tool-logo html5">H5</div>
+            <h4>HTML5</h4>
+            <p>Modern web standards taught as a core digital literacy skill in secondary school</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SCIENCE / MATH ========== -->
+  <section id="science" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">07 — Mathematics & Physics</span>
+        <h2>Science <span class="highlight">in Motion</span></h2>
+        <p>Mathematical models and physical laws explained through real activities in Lloa</p>
+      </div>
+
+      <div class="science-cards">
+        <!-- Sine Wave -->
+        <div class="science-card reveal-up" data-delay="0">
+          <div class="science-visual" id="sineCanvas">
+            <canvas id="sineWave" width="340" height="140"></canvas>
+          </div>
+          <div class="science-body">
+            <h3>🌊 Sine Wave & Circular Motion</h3>
+            <p>The rotation of a bicycle wheel traces a perfect sine wave over time. If θ is the angle of rotation:</p>
+            <div class="formula">y(t) = A · sin(ωt + φ)</div>
+            <p>Where <strong>A</strong> = amplitude (wheel radius), <strong>ω</strong> = angular velocity, <strong>φ</strong> = phase shift. As cyclists climb Lloa's mountain roads, the wheel's rotation is directly measurable via GPS speed sensors.</p>
+          </div>
+        </div>
+
+        <!-- Newton's Laws -->
+        <div class="science-card reveal-up" data-delay="100">
+          <div class="science-visual">
+            <div class="newton-diagram">
+              <div class="newton-obj">🚛</div>
+              <div class="force-arrow right">→ F<sub>engine</sub></div>
+              <div class="force-arrow left">← F<sub>friction</sub></div>
+              <div class="force-arrow down">↓ F<sub>gravity</sub></div>
+              <div class="force-arrow up">↑ F<sub>normal</sub></div>
+            </div>
+          </div>
+          <div class="science-body">
+            <h3>⚡ Newton's Laws on Mountain Roads</h3>
+            <p>A truck climbing Lloa's 8% gradient illustrates all three of Newton's laws simultaneously:</p>
+            <div class="formula">ΣF = ma &nbsp;⟹&nbsp; F<sub>net</sub> = F<sub>engine</sub> − F<sub>friction</sub> − mg·sin(θ)</div>
+            <p>At constant speed, <strong>acceleration = 0</strong>, so engine force exactly balances gravity and friction components — a perfect real-world equilibrium.</p>
+          </div>
+        </div>
+
+        <!-- Cycloid -->
+        <div class="science-card reveal-up" data-delay="200">
+          <div class="science-visual" id="cycloidCanvas">
+            <canvas id="cycloidWave" width="340" height="140"></canvas>
+          </div>
+          <div class="science-body">
+            <h3>🚲 Cycloid — The Bicycle Path</h3>
+            <p>A point on the rim of a rolling wheel traces a <em>cycloid</em> — a curve with elegant parametric equations:</p>
+            <div class="formula">x = r(t − sin t) &nbsp;|&nbsp; y = r(1 − cos t)</div>
+            <p>Cyclists travelling Lloa's roads unknowingly generate this beautiful mathematical curve with every revolution of their wheels. The cycloid also minimises travel time on a slope (brachistochrone problem).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== QUIZ ========== -->
+  <section id="quiz" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">08 — Interactive Quiz</span>
+        <h2>Test Your <span class="highlight">Knowledge</span></h2>
+        <p>10 questions about technology, science, and Lloa</p>
+      </div>
+
+      <div class="quiz-container reveal-up">
+        <div class="quiz-progress-bar">
+          <div id="quizProgressFill" style="width:0%"></div>
+        </div>
+        <div class="quiz-header">
+          <span id="quizCounter">Question 1 of 10</span>
+          <span id="quizScore">Score: 0</span>
+        </div>
+        <div id="quizArea">
+          <!-- Injected by JS -->
+        </div>
+        <div id="quizResult" class="quiz-result" style="display:none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CURIOSITIES CAROUSEL ========== -->
+  <section id="curiosities" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">09 — Scientific Curiosities</span>
+        <h2>Did You <span class="highlight">Know?</span></h2>
+        <p>10 fascinating science facts connected to life in Lloa</p>
+      </div>
+
+      <div class="carousel-wrapper reveal-up">
+        <button class="carousel-btn prev" id="carouselPrev">‹</button>
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Injected by JS -->
+        </div>
+        <button class="carousel-btn next" id="carouselNext">›</button>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DIGITAL NEWSPAPER ========== -->
+  <section id="newspaper" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">10 — Scientific Digest</span>
+        <h2>The <span class="highlight">Lloa Observer</span></h2>
+        <p>Digital newspaper — Technology & Science Edition</p>
+      </div>
+
+      <div class="newspaper-layout reveal-up">
+        <div class="newspaper-header">
+          <div class="newspaper-name">THE LLOA OBSERVER</div>
+          <div class="newspaper-meta">
+            <span>Vol. I, No. 1</span>
+            <span>|</span>
+            <span>Interdisciplinary Edition 2024</span>
+            <span>|</span>
+            <span>Free</span>
+          </div>
+        </div>
+
+        <div class="newspaper-grid">
+          <div class="newspaper-main">
+            <h2 class="news-headline">Satellites Now Guard Lloa's 1,400 Residents Around the Clock</h2>
+            <div class="news-byline">By the Tech & Science Research Team &nbsp;|&nbsp; Lloa, Pichincha</div>
+            <div class="news-img-placeholder">🛰️ Sentinel-1 radar imagery</div>
+            <p>The Instituto Geofísico of Ecuador (IGEPN) has expanded its Pichincha volcano monitoring network, integrating European Space Agency satellite data with a ground array of 18 seismographs. The system can now detect ground deformation of as little as <strong>3 millimeters</strong> — a critical capability in a region where subtle surface changes often precede significant volcanic events.</p>
+            <blockquote class="news-quote">"Technology does not replace the knowledge of local people — it amplifies it." — IGEPN Field Researcher</blockquote>
+            <p>Residents receive automated SMS alerts within 30 seconds of any threshold breach, a feat made possible by integrating satellite telemetry with Ecuador's national civil-alert infrastructure. Lloa's community emergency committee now trains regularly using digital simulation software to prepare evacuation scenarios.</p>
+          </div>
+
+          <div class="newspaper-side">
+            <div class="news-card-small">
+              <h4>🚜 Precision Farming Triples Potato Yield</h4>
+              <p>Three Lloa farms piloting IoT moisture sensors and drone-based fertilization recorded a <strong>38% yield increase</strong> in the 2024 harvest season.</p>
+            </div>
+            <div class="news-card-small">
+              <h4>🎓 Students Build Real Websites in Class</h4>
+              <p>Secondary school students at Unidad Educativa Lloa now learn HTML5 and CSS3 as part of the Digital Technology curriculum, producing live websites each semester.</p>
+            </div>
+            <div class="news-card-small">
+              <h4>🦅 AI Identifies 120+ Bird Species</h4>
+              <p>Ornithologist volunteers use a free smartphone app to log bird sightings in real time, contributing to a growing biodiversity database for the Pichincha cloud forest.</p>
+            </div>
+            <div class="news-highlight">
+              <div class="nh-num">45%</div>
+              <div>water saved through smart irrigation in Lloa's pilot farms</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TEAM ========== -->
+  <section id="team" class="section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">11 — Research Team</span>
+        <h2>Meet the <span class="highlight">Team</span></h2>
+        <p>The students and educators behind this interdisciplinary project</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card reveal-fade" data-delay="0">
+          <div class="team-avatar" style="background: linear-gradient(135deg,#0B1F3A,#4FC3F7)">👩‍💻</div>
+          <div class="team-info">
+            <h4>Jorge Guallichico</h4>
+            <span class="team-role">English/Digital Skills & math</span>
+            <p>Website development, UX/UI design, mathematical modeling, GeoGebra analysis and digital integration.</p>
+          </div>
+        </div>
+        <div class="team-card reveal-fade" data-delay="100">
+          <div class="team-avatar" style="background: linear-gradient(135deg,#1a3a2a,#2E8B57)">👨‍🔬</div>
+          <div class="team-info">
+            <h4>Joaquin Moyano</h4>
+            <span class="team-role">Biology & chemistry</span>
+            <p>Scientific research, biomolecules, ecosystems, chemical reactions and environmental analysis.</p>
+          </div>
+        </div>
+        <div class="team-card reveal-fade" data-delay="200">
+          <div class="team-avatar" style="background: linear-gradient(135deg,#3a1a1a,#E74C3C)">👨‍🏫</div>
+          <div class="team-info">
+            <h4>Adrian Estrella</h4>
+            <span class="team-role"> History & Citizenship</span>
+            <p>Historical research, local culture, public institutions and community development.</p>
+          </div>
+        </div>
+         <div class="team-card reveal-fade" data-delay="200">
+          <div class="team-avatar" style="background: linear-gradient(135deg,#ff0202,#1800b6)">🤵</div>
+          <div class="team-info">
+            <h4>Gabriel Beltrán</h4>
+            <span class="team-role">physical education & language</span>
+            <p>Sports analysis, healthy lifestyles, scientific writing and editorial content.</p>
+          </div>
+                  </div>
+         <div class="team-card reveal-fade" data-delay="200">
+          <div class="team-avatar" style="background: linear-gradient(135deg,#b302ff,#f0f0f0)">👩‍💼</div>
+          <div class="team-info">
+            <h4>Ana Romero</h4>
+            <span class="team-role">entrepreneurship</span>
+            <p>Business research, legal requirements, taxation systems, pricing analysis and entrepreneurship development in Lloa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REFERENCES ========== -->
+  <section id="references" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">12 — Bibliography</span>
+        <h2>References <span class="highlight">APA 7</span></h2>
+      </div>
+      <div class="references-list reveal-up">
+        <div class="reference-item">
+          <span class="ref-num">01</span>
+          <p>Instituto Geofísico – Escuela Politécnica Nacional. (2024). <em>Monitoreo del volcán Pichincha</em>. IGEPN. <span class="ref-url">https://www.igepn.edu.ec</span></p>
+        </div>
+        <div class="reference-item">
+          <span class="ref-num">02</span>
+          <p>European Space Agency. (2024). <em>Sentinel-1 SAR data for volcanic deformation monitoring</em>. ESA Copernicus Programme. <span class="ref-url">https://www.esa.int</span></p>
+        </div>
+        <div class="reference-item">
+          <span class="ref-num">03</span>
+          <p>Municipio del Distrito Metropolitano de Quito. (2023). <em>Plan de ordenamiento territorial — Parroquia Lloa</em>. Secretaría de Territorio. <span class="ref-url">https://www.quito.gob.ec</span></p>
+        </div>
+        <div class="reference-item">
+          <span class="ref-num">04</span>
+          <p>Food and Agriculture Organization. (2023). <em>Smart agriculture for small-scale farmers in Andean regions</em>. FAO Publications. <span class="ref-url">https://www.fao.org</span></p>
+        </div>
+        <div class="reference-item">
+          <span class="ref-num">05</span>
+          <p>GeoGebra Foundation. (2024). <em>GeoGebra: Dynamic mathematics for learning and teaching</em> [Software]. GeoGebra GmbH. <span class="ref-url">https://www.geogebra.org</span></p>
+        </div>
+        <div class="reference-item">
+          <span class="ref-num">06</span>
+          <p>National Aeronautics and Space Administration. (2024). <em>NDVI and vegetation health monitoring from space</em>. NASA Earth Observatory. <span class="ref-url">https://earthobservatory.nasa.gov</span></p>
+        </div>
+        <div class="reference-item">
+          <span class="ref-num">07</span>
+          <p>Halliday, D., Resnick, R., & Walker, J. (2021). <em>Fundamentals of physics</em> (11th ed.). Wiley.</p>
+        </div>
+        <div class="reference-item">
+          <span class="ref-num">08</span>
+          <p>Stewart, J. (2020). <em>Calculus: Early transcendentals</em> (9th ed.). Cengage Learning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-dot"></span>
+        <span>Lloa<strong>Tech</strong></span>
+      </div>
+      <p class="footer-tagline">Unidos en Cada Paso: Resiliencia para la Vida</p>
+      <p class="footer-sub">The Application of Technology in Daily Activities Developed in Lloa</p>
+      <div class="footer-school">
+        🏫 &nbsp; Unidad Educativa &nbsp;|&nbsp; Pichincha, Ecuador &nbsp;|&nbsp; 2024
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-btn">🌐 Website</a>
+        <a href="#" class="social-btn">📧 Contact</a>
+        <a href="#" class="social-btn">📖 Report</a>
+      </div>
+      <div class="footer-credits">
+        <p>Jorge Guallichico &nbsp;|&nbsp; Interdisciplinary Project — English & Digital Tools</p>
+        <p>© 2026 Canesa45Lsa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-overlay" id="lightboxOverlay"></div>
+    <div class="lightbox-content" id="lightboxContent"></div>
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
